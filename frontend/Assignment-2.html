@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Assignment-2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Tilt+Warp&display=swap" rel="stylesheet">
+    <style>
+        * {
+            /* font-family:Tw Cen MT Conde; */
+            font-family: 'Poppins', sans-serif;
+            /* font-family: 'Tilt Warp', cursive; */
+
+        }
+
+        #top {
+            background-color: #724e91;
+            height: 132rem;
+            
+        }
+
+        #header {
+            display: flex;
+            color: white;
+
+        }
+
+        #left {
+            font-weight: 100;
+            margin-left: 150px;
+        }
+
+        #right {
+            position: absolute;
+            right: 2px;
+            margin: 10px 150px 0px 0px;
+            font-weight: 400;
+        }
+
+        #right #signin {
+            border-radius: 20px;
+            /* margin-left: 40px; */
+            border: none;
+            /* padding: ;                */
+        }
+
+        #right a {
+            color: white;
+            text-decoration: none;
+            margin: 0px 40px 0px 40px;
+        }
+
+        #right #signin a {
+            color: black;
+            font-weight: bold;
+
+        }
+
+        button {
+            margin-left: 40px;
+            padding: 8px 5px;
+        }
+        #section{
+            margin-top: 40px;
+        }
+
+        #ia {
+            margin-left: 150px;
+            margin-top: 0px;
+            margin-bottom: 1215px;
+
+        }
+
+        #ib {
+            margin-left: 90px;
+            margin-top: 10px;
+            margin-bottom: 600px;
+            /* z-index: 0; */
+        }
+
+        #para1 {
+            font-size: 90px;
+            font-weight: 600;
+            color: white;
+            /* border: 2px solid; */
+            /* margin-bottom: 420px; */
+            position: absolute;
+            bottom: -50px;
+            left: 150px;
+            /* z-index: 1; */
+        }
+        #searchbar{
+            position: absolute;
+            left: 150px;
+            top: 725px;
+            bottom: -85px;
+            border:none;
+            border-radius: 70px;
+            /* color:white; */
+            /* width: 100%; */
+            background-color: white;
+            /* z-index: 10; */
+        }
+        #search{
+            width: 650px;
+            height: 60px;
+            max-width: 650px;            
+        }
+        #bar{
+                        
+            color:black;
+            margin-left: 65px;
+            margin-bottom: 30px;
+            padding-bottom: 30px;
+            font-size: 20px;
+            background: none;
+            border:none;
+            outline:none;
+            z-index:1;
+            width:460px;
+        }
+        #btn{
+            border-radius: none;
+            outline: none;
+            background: none;
+            border: 1px;
+            border-color: white;
+            color:transparent;
+            /* margin-left: 257px; */
+            margin-top: 2px;
+            
+        }
+        #para{
+            background-color: #5a367a;
+            /* border: 1px solid; */
+            /* display:block; */
+            width: 1200px; 
+            margin: -530px 150px;
+        }
+        #para2{
+            text-align:justify ;
+            color: white;
+            font-size: 28px;
+            padding: 100px 100px 20px 100px;
+            /*  */
+            
+        }
+        #p1{
+            
+            color: white;
+            font-size: 15px;
+            padding: 0px 100px ;
+        }
+        #p2{
+            
+            color: orangered;
+            font-size: 20px;
+            padding:0px 100px 20px 100px;
+        }
+        #last{
+            background-color: #724e91;
+            display: flex;
+            width: 100%;
+            z-index: 9;
+        }
+        #c{
+            position: absolute;
+            left: 160px;
+            bottom: -1400px;
+        }
+        #p3{
+            font-size: 60px;
+            font-weight:  bold;
+            color: white;
+            position: absolute;
+            left: 800px;
+            right: 160px;
+            bottom: -1200px;
+        }
+        #p4{
+            font-size: 15px;
+            /* font-weight:  bold; */
+            color: white;
+            position: absolute;
+            left: 800px;
+            right: 160px;
+            bottom: -1230px;
+        }
+        #bottom{
+            background-color:white;
+            height: 175rem;
+        }
+        #sqaure div p{
+           border: 1px solid;
+        }
+        #s1{
+            display:flex;
+            position:absolute;
+            left:20rem;
+            width:300px;
+            height:300px;
+            background-color: orange;
+            color: black;
+            font-size: 32px;
+            /* padding: 250px 120px 70px 30px; */
+            padding-left: 30px;
+            text-align:left;
+            z-index: 12 ;
+            bottom:-1550px;
+        }
+        #s2{
+            display:flex;
+            position:absolute;
+            left:43rem;
+            width:300px;
+            height:300px;
+            background-color: orange;
+            color: black;
+            font-size: 32px;
+            /* padding: 250px 120px 70px 30px; */
+            padding-left: 30px;
+            z-index: 12 ;
+            bottom:-1550px;
+        }
+        #s3 {
+            display:flex;
+            position:absolute;
+            left:66rem;
+            width:300px;
+            height:300px;
+            background-color: orange;
+            color: black;
+            font-size: 32px;
+            /* padding: 250px 120px 70px 30px; */
+            padding-left: 30px;
+            z-index: 12 ;
+            bottom:-1550px;
+            margin-top: 100px;
+            
+        }
+        #s1 p{
+            width: 250px;
+            text-align: left;
+            margin-top: 180px;
+        }
+        #s2 p{
+            width: 250px;
+            text-align: left;
+            margin-top: 180px;
+        }
+        #s3 p{
+            width: 250px;
+            text-align: left;
+            margin-top: 180px;
+        }
+        #pre{
+            
+            height: 500px;
+            margin-top: 300px;
+            z-index: 10;
+        }
+        #pre1{
+            display: flex;
+            position: absolute;
+            left: 150px;
+            margin-right: 550px;
+            font-size: 52px;
+            text-align: left;
+            font-weight: bold;
+            margin-top: -40px;
+        }
+        #i1pre{
+            display: flex;
+            margin-left: 925px;
+            
+
+        }
+        #pre1 span{
+            font-size: 18px;
+
+        }
+        #pre_2{
+            z-index: 12;
+        }
+        #i2pre{
+            display: flex;
+            position: absolute;
+            left: 150px;
+            margin-right: 550px;
+            margin-top:-130px;
+        }
+        #pp1{
+            display: flex;
+            font-size: 32px;
+            margin-left: 925px;
+            font-weight: bold;
+            margin-top: 50px;
+        }
+        #pp2{
+            color: rgba(0, 0, 0, 0.200);
+            font-size: 18px;
+            font-weight: bold;
+            margin-left: 925px;
+            text-align: justify;
+            margin-right: 160px;
+            margin-top: 50px;
+        }
+        #pre_3{
+            z-index: 14;
+         }
+       #pp3{
+            display: flex;
+            font-size: 32px;
+            margin-left: 150px;
+            font-weight: bold;
+            margin-top: 300px;
+        }
+        #pp4{
+            color: rgba(0, 0, 0, 0.200);            
+            font-size: 18px;
+            font-weight: bold;
+            margin-left: 150px;
+            text-align: justify;
+            /* margin-right: 160px; */
+            margin-top: 50px;
+            margin-right: 850px;
+            /* width: 600px; */
+        }
+        #i3pre{
+            display: flex;
+            position: absolute;
+            left: 725px;
+            margin-left: 180px;
+            margin-top:-450px;
+        }
+        #pp5{
+            display: flex;
+            font-size: 32px;
+            margin-left: 925px;
+            font-weight: bold;
+            margin-top: 100px;
+        }
+        #pp6{
+            color: rgba(0, 0, 0, 0.200);
+            font-size: 18px;
+            font-weight: bold;
+            margin-left: 925px;
+            text-align: justify;
+            margin-right: 160px;
+            margin-top: 50px;
+        }
+        #pre_5{
+            width: 700px;
+            margin-left: 150px;
+        }
+        #pp7{
+            font-size: 52px;
+            font-weight: bold;
+        }
+        #pre_6{
+            margin-left: 150px;
+            margin-top: 150px;
+        }
+        #pre_6 span{
+            font-size: 28px;
+            background-color: orange;
+            padding: 10px;
+        }
+       
+        #pp8{
+            display: flex;
+            /* margin-left: 150px; */
+            margin-top: 50px; 
+            font-size: 28px;
+            font-weight: bold;
+        }
+        #pp9{
+            display: flex;
+            color: rgba(0, 0, 0, 0.200);
+            /* margin-left: 150px; */
+            margin-top: 20px;
+            font-size: 16px; 
+            font-weight: bold;
+            width: 300px;
+            /* border: 1px solid; */
+        }
+        #pp10{
+            display: flex;
+            margin-left: 450px;
+            margin-top: -231px; 
+            font-size: 28px;
+            font-weight: bold;
+        }
+        #pp11{
+            display: flex;
+            color: rgba(0, 0, 0, 0.200);
+            margin-left: 450px;
+            margin-top: 20px;
+            font-size: 16px; 
+            font-weight: bold;
+            width: 300px;
+            /* border: 1px solid; */
+        }
+        #pp12{
+            display: flex;
+            margin-left: 890px;
+            margin-top: -233px; 
+            font-size: 28px;
+            font-weight: bold;
+        }
+        #pp13{
+            display: flex;
+            color: rgba(0, 0, 0, 0.200);
+            margin-left: 890px;
+            margin-top: 20px;
+            font-size: 16px; 
+            font-weight: bold;
+            width: 300px;
+            /* border: 1px solid; */
+        }
+        #pre_7{
+            display: flex;
+            margin-left: 150px;
+            margin-top: 50px;
+            /* justify-content: center; */
+        }
+        #pp14{
+            font-size: 64px;
+            font-weight: bold;
+        }
+        #pp15{
+            
+            margin-left: 400px;
+            margin-right: 160px;
+            padding-top: 70px;
+            /* margin-top:-140px; */
+        }
+        #pre_8{
+            display: flex;
+            /* margin-left: 50px; */
+            /* margin-top: 50px; */
+            justify-content: space-evenly;
+            font-weight: bold;
+            background-color: whitesmoke;
+            height: 250px;
+        }
+        #pre_8 a{
+            display: block;
+            text-decoration: none;
+            color: rgba(0, 0, 0, 0.200);
+            line-height: 40px;
+            /* margin-left: 150px; */
+            /* margin-top: 50px; */
+            /* justify-content: center; */
+        }
+    </style>
+</head>
+
+<body>
+    <div id="top">
+        <div id="header">
+            <div id="left">
+                <h3 id="name">Mi-Kishan</h3>
+            </div>
+            <div id="right">
+                <a href="#">Service</a>
+                <a href="#">About Us</a>
+                <a href="#">Contact</a>
+                <button type="submit" id="signin"><a href="#">Sign Up</a></button>
+            </div>
+        </div>
+        <div id="section">
+            <img src="img/b.avif" width="400px" height="200px" id="ia">
+            <img src="img/a.avif" width="700px" height="800px" id="ib">
+            <p id="para1">A Creative <br> Company That's More</p>
+            <div id="searchbar">
+                <form id="search">
+                    <input id="bar" type="text" placeholder="WWW.GMAIL.COM">
+                    <button type="submit" id="btn"><img src="img/search.png" height="60px" width="60px" align="center"/></button>
+                </form>                
+            </div>
+            <div id="para">
+                <p id="para2">An agency refers to a relationship two parties, where<br>one party, called the agent, represents the other party, called the<br>principal. An agent is usually hired by the principal to perform an<br>act or service on his behalf.<br></p>
+                <p id="p1">by founder</p>
+                <p id="p2">Majarul Islam</p>
+            </div>
+            <div id="last"> 
+                <img src="img/c.avif" height="600px" width="450px" id="c"/>
+                <p id="p3">Correct decision is the main purpose of this agency.</p>
+                <p id="p4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, vero explicabo minus labore optio molestias molestiae natus deserunt quam a tempore? Mollitia quo molestias facilis.</p>
+            </div>           
+        </div>
+       
+    </div>  
+    <div id="bottom">
+        <div id="square">
+            <div id="s1"><p><span style="color:rgba(159, 105, 4, 0.548)">01</span><br>Planning</p></div>
+            <div id="s2"><p><span style="color:rgba(159, 105, 4, 0.548)">02</span><br>Expriment</p></div>
+            <div id="s3"><p><span style="color:rgba(159, 105, 4, 0.548)">02</span><br>Project</p></div>
+        </div>
+        <div id="pre">
+            <div id="pre1">
+                <p>Here goes a title about the cases datdash has on <br>here<br><span>Check out of out cases &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &#8594</span></p>
+            </div>
+            <div id="i1pre">
+                <img src="img/p2.avif" width="450px" height="500px"/>
+            </div>
+        </div>
+        <div id="pre_2">
+            <div id="i2pre">
+                <img src="img/p3.avif" width="600px" height="600px" />                
+            </div>
+            <div id="pre2">
+                <p id="pp1">Check out of our casess</p>
+                <p id="pp2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi error aspernatur praesentium deleniti fuga, dolorum velit adipisci itaque veritatis inventore atque saepe eligendi quisquam maxime!</p>
+            </div>
+        </div>
+        <div id="pre_3">
+            <p id="pp3">Check out of our casess</p>
+            <p id="pp4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi error aspernatur praesentium deleniti fuga, dolorum velit adipisci itaque veritatis inventore atque saepe eligendi quisquam maxime!</p>
+            <div id="i3pre">
+                <img src="img/p4.avif" width="500px" height="500px" />                
+            </div>
+        </div>
+        <div id="pre_4">
+            <p id="pp5">Check out of our casess</p>
+            <p id="pp6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi error aspernatur praesentium deleniti fuga, dolorum velit adipisci itaque veritatis inventore atque saepe eligendi quisquam maxime!</p>
+        </div>
+        <div id="pre_5">
+            <p id="pp7">All you need to do is follow our steps</p>            
+        </div>
+        <div id="pre_6">
+            <p><span>01</span>---------------------------------------------<span>02</span>---------------------------------------------<span>03</span></p>
+            <p id="pp8">Check out of our casess</p>
+            <p id="pp9">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi error aspernatur praesentium deleniti fuga, dolorum velit adipisci itaque veritatis inventore atque saepe eligendi quisquam maxime!</p>
+            <p id="pp10">Check out of our casess</p>
+            <p id="pp11">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi error aspernatur praesentium deleniti fuga, dolorum velit adipisci itaque veritatis inventore atque saepe eligendi quisquam maxime!</p>
+            <p id="pp12">Check out of our casess</p>
+            <p id="pp13">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi error aspernatur praesentium deleniti fuga, dolorum velit adipisci itaque veritatis inventore atque saepe eligendi quisquam maxime!</p>
+        </div>
+        <div id="pre_7">
+            <p id="pp14">Concept</p>
+            <p id="pp15">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi error aspernatur praesentium deleniti fuga, dolorum velit adipisci itaque veritatis inventore atque saepe eligendi quisquam maxime!</p>
+
+        </div>
+        <footer id="pre_8">
+            <div id="product">
+                <h4>Product</h4>
+                <a href="#_" >Icon Design</a>
+                <a href="#_" >Logo Design</a>
+                <a href="#_" >UI/UX Design</a>                
+            </div>
+            <div id="resource">
+                <h4>Resource</h4>
+                <a href="#_" >Blog</a>
+                <a href="#_" >Support</a>
+                <a href="#_" >Newsletter</a>                
+            </div>
+            <div id="community">
+                <h4>Community</h4>
+                <a href="#_" >Twitter</a>
+                <a href="#_" >Instagram</a>
+                <a href="#_" >Slack</a>                
+                <a href="#_" >Dribbble</a>                
+            </div>
+            <div id="support">
+                <h4>Support</h4>
+                <a href="#_" >My Account</a>
+                <a href="#_" >Help & Support</a>
+                <a href="#_" >Contact Us</a>                
+            </div>
+            <div id="company">
+                <h4>Company</h4>
+                <a href="#_" >Privacy Policy</a> 
+                <a href="#_" >Terms of Service</a>
+                <a href="#_" >Code of Conduct</a>                
+            </div>
+        </footer>
+    </div>
+      
+</body>
+</html>
